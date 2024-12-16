@@ -14,4 +14,4 @@ deploy-anvil:
 	@forge script script/DeployOurToken.s.sol:DeployOurToken --rpc-url $(LOCAL_RPC_URL) --account defaultKey --broadcast -vvvv
 
 deploy-sepolia:
-	@forge script script/DeployOurToken.s.sol:DeployOurToken --rpc-url $(SEPOLIA_RPC_URL) --account testKey --etherscan-api-key $(ETHERSCAN_API_KEY) --broadcast --verify
+	@forge script script/DeployFundMe.s.sol:DeployFundMe --rpc-url $(SEPOLIA_RPC_URL) --account testKey --broadcast --verify --etherscan-api-key $(ETHERSCAN_API_KEY) -vvvv
