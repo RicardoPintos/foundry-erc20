@@ -1,6 +1,6 @@
 -include .env
 
-.PHONY: all test deploy
+.PHONY: build test fork install deploy anvil sepolia
 
 build :; forge build
 
